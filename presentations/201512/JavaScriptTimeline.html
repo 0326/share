@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>JavaScript Timeline</title>
+
+    <meta name="description" content="github,Front End,Reveal.js Presentations,CSS">
+    <meta name="author" content="李全锋,机智的大熊猫,动感小前端">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <link rel="stylesheet" href="../../lib/reveal/css/reveal.css">
+    <link rel="stylesheet" href="../../lib/reveal/css/theme/black.css" id="theme">
+
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="../../lib/reveal/lib/css/zenburn.css">
+
+    <!--[if lt IE 9]>
+    <script src="../../lib/reveal/lib/js/html5shiv.js"></script>
+    <![endif]-->
+    <style>
+        .reveal .controls {
+            display: none !important;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<div class="reveal">
+
+    <!-- Any section element inside of this container is displayed as a slide -->
+    <div class="slides">
+        <section>
+            <h1>JavaScript Timeline</h1>
+
+            <p>JavaScript 演变史</p>
+        </section>
+
+        <section>
+            <img src="http://image.beekka.com/blog/201106/bg2011060503.jpg"/>
+
+            <p>Brendan Eich</p>
+
+        </section>
+
+        <!-- Example of nested vertical slides -->
+        <section>
+            <section>
+                <h2>设计思路</h2>
+                <ul>
+                    <li>借鉴C语言的基本语法</li>
+                    <li>借鉴Java语言的数据类型和内存管理</li>
+                    <li>借鉴Scheme语言，将函数列为"第一等公民"</li>
+                    <li>借鉴Self语言，基于原型继承</li>
+                </ul>
+            </section>
+            <section>
+                <h2>混合编程语言</h2>
+                <ul>
+                    <li>函数式编程(Brendan Eich)</li>
+                    <li>面向对象编程(网景公司)</li>
+                </ul>
+            </section>
+        </section>
+        <section>
+            <h2>1995</h2>
+            <p class="">JavaScript 诞生了</p>
+        </section>
+        <section>
+            <h2>1996</h2>
+            <p class="">微软推出JScript</p>
+        </section>
+        <section>
+            <h2>1997</h2>
+            <p class="">第一个国际标准ECMA-262正式颁布</p>
+        </section>
+         <section>
+            <h2>2008</h2>
+            <p class="">
+                <img src="http://img3.douban.com/lpic/s2931482.jpg">
+            </p>
+        </section>
+        <section>
+            <h2>2009</h2>
+            <p class="">Google在V8中引入了JIT技术</p>
+            <p class="fragment">Node.js 诞生了</p>
+        </section>
+        <section>
+            <h2>2013</h2>
+            <p class="">asm.js诞生了</p>
+            <p class="fragment">前端工具库不断完善</p>
+        </section>
+        <section>
+            <h2>2015</h2>
+            <p class="">JavaScript成功向Native扩张</p>
+            <p class="fragment">ES6发布</p>
+            <a class="fragment" href="https://www.w3.org/community/webassembly/">WEBASSEMBLY COMMUNITY GROUP 成立</a>
+            <a class="https://medium.com/javascript-scene/what-is-webassembly-the-dawn-of-a-new-era-61256ec5a8f6#.6diwvs2sx"></a>
+        </section>
+        <section>
+            <h2>2016</h2>
+            <p class="fragment">ES7发布,JavaScript继续发展</p>
+        </section>
+        <section>
+            <h2>2020</h2>
+            <p class="fragment">WASM工具和库不断完善,前端开始分化</p>
+        </section>
+        <section>
+            <h2>2025</h2>
+            <p class="fragment">WASM开始扩张</p>
+        </section>
+        <section>
+            <h2>2030</h2>
+            <p class="fragment">METAL 诞生</p>
+            <p class="fragment">Kernel + asm.js + DOM at full native speed</p>
+        </section>
+        <section>
+            <h2>2035</h2>
+            <p class="fragment">JavaScript Lost</p>
+            <p class="fragment">Programming won</p>
+        </section>
+
+        <section style="text-align: left;">
+            <h1>THE END</h1>
+
+            <p>
+                - <a href="#">动感小前端</a> <br>
+                - <a href="#">2015.12.23</a> <br>
+            </p>
+            </p>
+        </section>
+
+    </div>
+
+</div>
+
+<script src="../../lib/reveal/lib/js/head.min.js"></script>
+<script src="../../lib/reveal/js/reveal.js"></script>
+
+<script>
+
+    // Full list of configuration options available at:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [
+            {
+                src: '../../lib/reveal/lib/js/classList.js', condition: function () {
+                return !document.body.classList;
+            }
+            },
+            {
+                src: '../../lib/reveal/plugin/markdown/marked.js', condition: function () {
+                return !!document.querySelector('[data-markdown]');
+            }
+            },
+            {
+                src: '../../lib/reveal/plugin/markdown/markdown.js', condition: function () {
+                return !!document.querySelector('[data-markdown]');
+            }
+            },
+            {
+                src: '../../lib/reveal/plugin/highlight/highlight.js', async: true, callback: function () {
+                hljs.initHighlightingOnLoad();
+            }
+            },
+            {src: '../../lib/reveal/plugin/zoom-js/zoom.js', async: true},
+            {src: '../../lib/reveal/plugin/notes/notes.js', async: true}
+        ]
+    });
+
+</script>
+
+</body>
+</html>
