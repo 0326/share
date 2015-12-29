@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta width="device-width" initial-scale="1.0" maximum-scale="1.0" user-scalable="no">
-    <title>Title in test</title>
+    <title>全锋的分享</title>
     <link rel="stylesheet" href="../../lib/reveal/css/reveal.css">
     <link rel="stylesheet" href="../../lib/reveal/css/theme/black.css">
     <link rel="stylesheet" href="../../lib/reveal/lib/css/zenburn.css">
@@ -13,6 +13,7 @@
       .right{float: right;}
       .t-left{text-align:left;}
       .t-right{text-align: right;}
+      .red{color:red}
     </style>
   </head>
   <body>
@@ -23,57 +24,228 @@
           <p class="fragment">阿里通信前端内部分享</p>
         </section>
         <section class="t-left">
-          <h1>个人简介</h1>
-          <p class="fragment">李全锋(全锋) 华科</p>
-          <p class="fragment">软件工程 本科</p>
-          <p class="fragment">业余爱好 看书 画漫画</p>
-          <p class="fragment">研究方向 呵呵</p>
+          <h2>个人简介</h2>
+          <div class="left">
+            <p class="fragment">李全锋 (全锋)</p>
+            <p class="fragment">湖南 张家界 土家族</p>
+            <p class="fragment">华中科技大学 本科</p>
+            <p class="fragment">软件学院2015届毕业生</p>
+            <p class="fragment">业余爱好 看书 画漫画</p>
+            <p class="fragment"><span>研究方向</span><span>  如何优雅的搬砖</span></p>
+            <p class="fragment"><img src="http://image.tianjimedia.com/uploadImages/20151118093032972.jpg" width="40px" style="margin:0 10px;vertical-align:middle;"></p>
+          </div><img src="http://7xp4vm.com1.z0.glb.clouddn.com/b1203276250f4e9ce212fc958ca7a862.jpeg" width="40%" class="right">
         </section>
         <section>
           <section>
-            <h1>你觉得JS这门语言怎么样</h1>
+            <h1>个人经历</h1><img src="http://static.xialv.com/scenery/2014/05/22/f9/14007295486209yeoxi.jpg">
           </section>
           <section>
-            <h1>JS这门语言就是一坨屎</h1>
+            <h2>大一 学习期</h2>
+            <p>加入学生会搞设计</p>
+            <p>扎身图书馆变技工</p><img width="60%" src="http://static.panoramio.com/photos/large/6489559.jpg">
+          </section>
+          <section>
+            <h2>大二 探索期</h2>
+            <p>被当班委决定装逼做学霸</p>
+            <p>计划失败反思投身搞技术</p><img width="60%" src="http://7xp4vm.com1.z0.glb.clouddn.com/8b13632762d0f703e99a12a80bfa513d2697c59e.jpg">
+          </section>
+          <section>
+            <h2>大三 奋斗期</h2>
+            <p>暑假留校网络中心大机编程</p>
+            <p>外包做产品比赛拿投资创业</p><img width="70%" src="http://7xp4vm.com1.z0.glb.clouddn.com/1.pic_hd.jpg">
+          </section>
+          <section>
+            <h2>大四 实践期</h2>
+            <p>创业不顺发展遇瓶颈决定退出</p>
+            <p>返校做项目重新找实习去工作</p><img width="80%" src="http://7xp4vm.com1.z0.glb.clouddn.com/2873578037339577060.jpg">
           </section>
         </section>
         <section>
-          <h1>我的JS这门语言就是一坨屎第三次</h1>
+          <h2>为何选择前端?</h2>
+          <ul>
+            <li>学院宣传部: 绘画/设计 PS/AE<span class="fragment">(个人兴趣)</span></li>
+            <li>IBM实验室: 大型主机COBOL编程<span class="fragment">(不感兴趣)</span></li>
+            <li>创业团队 Python/JavaScript<span class="fragment">(web)</span></li>
+            <li>广州百田 ActionScript<span class="fragment">(没有挑战性)</span></li>
+            <li>毕业设计 Java/AngularJS/Ionic/Cordova<span class="fragment">(方向)</span></li>
+          </ul>
+        </section>
+        <section>
+          <section>
+            <h1>前端生态发展趋势</h1>
+          </section>
+          <section>
+            <h1>2016前端开发技术栈</h1>
+          </section>
+          <section>
+            <h1>小白看JavaScript</h1>
+          </section>
+        </section>
+        <section>
+          <section>
+            <h2>你觉得JS这门语言怎么样?</h2>
+          </section>
+          <section>
+            <h2>"JS这门语言就是一坨屎"</h2>
+          </section>
+          <section>
+            <h3><span>从纯</span><span class="fragment highlight-red">语言</span><span>的角度去看JavaScript</span></h3>
+          </section>
+        </section>
+        <section>
+          <h2>诞生背景</h2>
+          <ul>
+            <li>C<span class="fragment">(70年代初,贝尔实验室)</span></li>
+            <li>Python<span class="fragment">(1989-1991)</span></li>
+            <li>Java<span class="fragment">(1990-1995)</span></li>
+            <li>JavaScript<span class="fragment">(1995,10天)</span></li>
+            <li>Ruby<span class="fragment">(1995)</span></li>
+          </ul>
+        </section>
+        <section>
+          <h2>缺陷1</h2>
+          <p>全局变量</p>
+          <section>
+            <p>大神觉得这是最糟糕的部分.</p>
+            <p>全局变量会让程序变的难以调试.</p>
+            <p>尤其是在大型Web应用中.</p>
+          </section>
+          <section>
+            <p>我们其实可以有效的规避全局变量</p>
+            <p>严格模式和一系列编码规范对全局变量做限制</p>
+            <p>模块化可以有效避免全局污染</p>
+          </section>
+        </section>
+        <section>
+          <h2>缺陷2</h2>
+          <p>作用域</p>
+          <section>
+            <p>有块级语法却没有块级作用域</p>
+          </section>
+          <section>
+            <p>ES6 修复bug</p>
+          </section>
+        </section>
+        <section>
+          <section>
+            <h2>缺陷3</h2>
+            <p>ASI(自动插入分号机制)</p>
+          </section>
+          <section>
+            <h2>缺陷4</h2>
+            <p>保留字</p>
+          </section>
+          <section>
+            <h2>缺陷5</h2>
+            <p>typeof</p>
+          </section>
+          <section>
+            <h2>缺陷6</h2>
+            <p>new</p>
+          </section>
+          <section>
+            <h2>缺陷7</h2>
+            <p>void</p>
+          </section>
+          <section>
+            <h2>缺陷8</h2>
+            <p>parseInt</p>
+          </section>
+          <section>
+            <h2>缺陷9</h2>
+            <p>eval</p>
+          </section>
+          <section>
+            <h2>缺陷10</h2>
+            <p>continue</p>
+          </section>
+          <section>
+            <h2>缺陷11</h2>
+            <p>with</p>
+          </section>
+          <section>
+            <h2>缺陷12</h2>
+            <p>NaN</p>
+          </section>
+          <section>
+            <h2>缺陷13</h2>
+            <p>hasOwnProperty</p>
+          </section>
+          <section>
+            <h2>缺陷14</h2>
+            <p>位运算符</p>
+          </section>
+          <section>
+            <h2>缺陷N...</h2><img src="http://7xp4vm.com1.z0.glb.clouddn.com/acd3240828381f3058bfad59a9014c086c06f09c.jpg">
+          </section>
+        </section>
+        <section>
+          <h2>谈谈JavaScript的优点</h2>
         </section>
         <section>
           <blockquote>"与其说我爱Javascript，不如说我恨它。它是C语言和Self语言一夜情的产物。十八世纪英国文学家约翰逊博士说得好：'它的优秀之处并非原创，它的原创之处并不优秀。'（the part that is good is not original, and the part that is original is not good.）"</blockquote>
-          <p class="right">--Brendan Eich</p>
+          <p class="right">——Brendan Eich</p>
         </section>
         <section>
+          <h2>语言只是一种工具</h2>
+          <section>
+            <blockquote>"所有能帮助人们表达他们的想法的东西都会让语言更好。一个语言在一个好的工匠手里应该能胜任每天的任务。语言是否优美是次要的问题。被认为是丑陋的语言开发出来的有用的系统，比优美的语言开发出来的系统要多得多。"</blockquote>
+            <p class="right">——Bjarne Stroustrup</p>
+          </section>
+          <section><img src="http://7xp4vm.com1.z0.glb.clouddn.com/%E6%9C%AA%E6%A0%87%E9%A2%98-1%E5%89%AF%E6%9C%AC.jpg"></section>
+        </section>
+        <section>
+          <section>
+            <h1>语言不是工具</h1>
+          </section>
+          <section>
+            <h2>语言是发挥创造力的原材料</h2>
+          </section>
+        </section>
+        <section>
+          <h1>总结</h1>
+          <section>
+            <ul>
+              <li>不要把编程语言当成工具</li>
+              <li>尝试一下其他语言</li>
+              <li>Geek精神(科学 溯源 怀疑)</li>
+              <li>多和非前端码农交流 扩充视野</li>
+            </ul>
+          </section>
+        </section>
+        <section>
+          <section><img width="40%" src="http://img10.360buyimg.com/n0/jfs/t562/330/910920723/318403/60d49bfa/5495b04eNec10517f.jpg">
+            <p>LISP是高级语言的进化终极形态</p>
+          </section>
+          <section>
+            <h2>Lisp<span style="font-size:.7em">(1958,John McCarthy)</span></h2>
+            <ul style="list-style-type:decimal-leading-zero">
+              <li>条件结构</li>
+              <li>将函数作为数据类型</li>
+              <li>递归</li>
+              <li>变量的动态类型</li>
+              <li>垃圾回收</li>
+              <li>程序由表达式组成</li>
+              <li><a href="http://es6.ruanyifeng.com/#docs/symbol">符号类型</a></li>
+              <li>代码使用符号和常量组成的树形表示法</li>
+              <li>无论什么时候，整个语言都是可用的</li>
+            </ul>
+          </section>
+        </section>
+        <section>
+          <section>
+            <h2>JavaScript是一门相当优秀的语言</h2>
+          </section>
+          <section>
+            <h2>编程语言的终极目标</h2>
+            <h2 class="red">节省人的时间</h2>
+          </section>
+        </section>
+        <section><img src="http://7xp4vm.com1.z0.glb.clouddn.com/JavaScript_at_20.png"></section>
+        <section><img style="border-radius:50%;margin-bottom:-20px;" src="http://tp2.sinaimg.cn/2625394005/180/40062973916/1">
+          <p>动感小前端</p>
           <h1>THE END</h1>
-          <p><a>动感小前端</a><a>2015.12.30</a></p>
-        </section>
-        <section>
-          <h1>我的第三次</h1>
-        </section>
-        <section>
-          <h1>我的第三次</h1>
-        </section>
-        <section>
-          <h1>我的第三次</h1>
-        </section>
-        <section>
-          <h1>我的第三次</h1>
-        </section>
-        <section>
-          <h1>我的第三次</h1>
-        </section>
-        <section>
-          <h1>我的第三次</h1>
-        </section>
-        <section>
-          <h1>我的第三次</h1>
-        </section>
-        <section>
-          <h1>我的第三次</h1>
-        </section>
-        <section>
-          <h1>我的第三次</h1>
+          <p>2015.12.30</p>
         </section>
       </div>
     </div>
